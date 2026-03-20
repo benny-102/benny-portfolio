@@ -1,65 +1,156 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-black text-white px-6 py-12">
+      
+      {/* HERO SECTION */}
+      <section className="max-w-4xl mx-auto text-center space-y-6">
+        <h1 className="text-4xl md:text-6xl font-bold">
+          Benny Adenugba-Omonubi
+        </h1>
+
+        <p className="text-xl text-gray-400">
+          Data Analyst
+        </p>
+
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          Turning data into actionable insights using Python, SQL, and Power BI, 
+          with experience in applying machine learning to solve business problems.
+        </p>
+
+        <div className="flex justify-center gap-4 flex-wrap text-sm text-gray-400">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Power BI</span>
+          <span>Data Analysis</span>
+          <span>Predictive Modeling</span>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* PROJECTS SECTION */}
+      <section className="mt-24 max-w-5xl mx-auto space-y-12">
+        <h2 className="text-3xl font-semibold text-center">Projects</h2>
+
+        {/* BUSINESS ANALYTICS */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-gray-300">
+            Business Analytics
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-6">
+
+            <Link href="https://github.com/benny-102/superstore-sales-analysis" target="_blank">
+              <div className="bg-gray-900 p-6 rounded-2xl hover:scale-105 hover:bg-gray-800 transition duration-300 cursor-pointer">
+                <h3 className="text-xl font-semibold mb-2">
+                  Retail Sales Performance Analysis
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  Analysis of sales trends, profitability, and discount impact using Python and Power BI.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="https://github.com/benny-102/olist-sql-powerbi-analysis" target="_blank">
+              <div className="bg-gray-900 p-6 rounded-2xl hover:scale-105 hover:bg-gray-800 transition duration-300 cursor-pointer">
+                <h3 className="text-xl font-semibold mb-2">
+                  E-commerce Performance & Delivery Analysis
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  SQL-driven analysis of revenue, customer behavior, and delivery efficiency.
+                </p>
+              </div>
+            </Link>
+
+          </div>
         </div>
-      </main>
-    </div>
+
+        {/* PREDICTIVE ANALYTICS */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-gray-300">
+            Predictive Analytics
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-6">
+
+            <Link href="https://github.com/benny-102/tiktok-video-verification-analysis" target="_blank">
+              <div className="bg-gray-900 p-6 rounded-2xl hover:scale-105 hover:bg-gray-800 transition duration-300 cursor-pointer">
+                <h3 className="text-xl font-semibold mb-2">
+                  TikTok Verification Analysis
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  Predictive modeling and analysis of content verification patterns.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="https://github.com/benny-102/waze-user-churn-analysis-ml" target="_blank">
+              <div className="bg-gray-900 p-6 rounded-2xl hover:scale-105 hover:bg-gray-800 transition duration-300 cursor-pointer">
+                <h3 className="text-xl font-semibold mb-2">
+                  Waze Churn Analysis
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  User behavior analysis and churn prediction using machine learning.
+                </p>
+              </div>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section className="mt-24 max-w-3xl mx-auto text-center space-y-6">
+        <h2 className="text-3xl font-semibold">About Me</h2>
+
+        <p className="text-gray-300 leading-relaxed">
+          I am a data analyst with a background in physiology and a strong interest in using data to understand and solve real-world problems. 
+          My experience spans data cleaning, analysis, and visualization using Python, SQL, and Power BI.
+        </p>
+
+        <p className="text-gray-400 leading-relaxed">
+          Through hands-on projects, I have analyzed business performance, uncovered key insights, and applied 
+          machine learning techniques to support data-driven decision-making. I enjoy transforming complex datasets 
+          into clear, actionable insights that create real impact.
+        </p>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section className="mt-24 max-w-3xl mx-auto text-center space-y-6">
+        <h2 className="text-3xl font-semibold">Contact</h2>
+
+        <p className="text-gray-400">
+          Feel free to reach out or connect with me
+        </p>
+
+        <div className="flex justify-center gap-6 flex-wrap mt-4">
+
+          <a 
+            href="mailto:bennyadenugba@gmail.com"
+            className="bg-white text-black px-6 py-2 rounded-xl hover:bg-gray-200 transition"
+          >
+            Email
+          </a>
+
+          <a 
+            href="https://github.com/benny-102"
+            target="_blank"
+            className="border border-gray-600 px-6 py-2 rounded-xl hover:bg-gray-800 transition"
+          >
+            GitHub
+          </a>
+
+          <a 
+            href="https://www.linkedin.com/in/benny-adenugba-omonubi-842a28298/"
+            target="_blank"
+            className="border border-gray-600 px-6 py-2 rounded-xl hover:bg-gray-800 transition"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+      </section>
+
+    </main>
   );
 }
