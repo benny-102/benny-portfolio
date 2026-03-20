@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex justify-center gap-4 flex-wrap mt-4">
 
           <a 
-            href="/Benny_Adenugba_Resume.pdf" 
+            href="/Benny_Adenugba_Data_Analyst_Resume.pdf" 
             className="bg-white text-black px-6 py-2 rounded-xl hover:bg-gray-200 transition"
           >
             Download Resume
