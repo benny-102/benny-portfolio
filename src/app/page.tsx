@@ -15,11 +15,32 @@ export default function Home() {
         </p>
 
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Turning data into actionable insights using Python, SQL, and Power BI, 
-          with experience in applying machine learning to solve business problems.
+          Turning complex data into actionable business insights using Python, SQL, and Power BI, 
+          with experience in predictive modeling and real-world data analysis.
         </p>
 
-        <div className="flex justify-center gap-4 flex-wrap text-sm text-gray-400">
+        {/* BUTTONS */}
+        <div className="flex justify-center gap-4 flex-wrap mt-4">
+
+          <a 
+            href="/Benny_Adenugba_Resume.pdf" 
+            className="bg-white text-black px-6 py-2 rounded-xl hover:bg-gray-200 transition"
+          >
+            Download Resume
+          </a>
+
+          <a 
+            href="https://github.com/benny-102"
+            target="_blank"
+            className="border border-gray-600 px-6 py-2 rounded-xl hover:bg-gray-800 transition"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+        {/* SKILLS */}
+        <div className="flex justify-center gap-4 flex-wrap text-sm text-gray-400 mt-2">
           <span>Python</span>
           <span>SQL</span>
           <span>Power BI</span>
@@ -46,7 +67,7 @@ export default function Home() {
                   Retail Sales Performance Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Analysis of sales trends, profitability, and discount impact using Python and Power BI.
+                  Identified loss-making products and uncovered how discount strategies negatively impacted profitability, highlighting opportunities to optimize pricing and improve margins.
                 </p>
               </div>
             </Link>
@@ -57,7 +78,7 @@ export default function Home() {
                   E-commerce Performance & Delivery Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  SQL-driven analysis of revenue, customer behavior, and delivery efficiency.
+                  Analyzed customer and delivery data to uncover revenue concentration and showed how delivery delays significantly impact customer satisfaction and review scores.
                 </p>
               </div>
             </Link>
@@ -79,7 +100,7 @@ export default function Home() {
                   TikTok Verification Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Predictive modeling and analysis of content verification patterns.
+                  Built a predictive model to identify factors influencing content verification, revealing that engagement metrics and content type strongly affect verification outcomes.
                 </p>
               </div>
             </Link>
@@ -90,7 +111,7 @@ export default function Home() {
                   Waze Churn Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  User behavior analysis and churn prediction using machine learning.
+                  Developed churn prediction models and identified low user engagement as a key driver of churn, providing insights to improve retention strategies.
                 </p>
               </div>
             </Link>
