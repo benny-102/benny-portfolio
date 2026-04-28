@@ -44,9 +44,38 @@ export default function Home() {
           <span>Python</span>
           <span>SQL</span>
           <span>Power BI</span>
+          <span>Machine Learning</span>
           <span>Data Analysis</span>
-          <span>Predictive Modeling</span>
         </div>
+      </section>
+
+      {/* FEATURED PROJECT */}
+      <section className="mt-24 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold text-center mb-8">
+          ⭐ Featured Project
+        </h2>
+
+        <Link href="https://github.com/benny-102/fraud-detection-risk-intelligence" target="_blank">
+          <div className="bg-gradient-to-br from-blue-900/40 to-gray-900 p-8 rounded-2xl hover:scale-[1.02] transition duration-300 cursor-pointer border border-blue-800">
+
+            <h3 className="text-2xl font-bold mb-3">
+              Fraud Detection & Risk Intelligence System
+            </h3>
+
+            <p className="text-gray-300 mb-4">
+              Built a hybrid fraud detection system combining rule-based risk scoring with 
+              Isolation Forest anomaly detection to identify suspicious financial transactions.
+            </p>
+
+            <ul className="text-sm text-gray-400 space-y-1">
+              <li>• Engineered fraud signals (velocity, geo-risk, high-value transactions)</li>
+              <li>• Implemented anomaly detection using Isolation Forest</li>
+              <li>• Designed risk scoring system for real-time fraud classification</li>
+              <li>• Built interactive Power BI dashboard for fraud monitoring</li>
+            </ul>
+
+          </div>
+        </Link>
       </section>
 
       {/* PROJECTS SECTION */}
@@ -67,7 +96,7 @@ export default function Home() {
                   Retail Sales Performance Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Identified loss-making products and uncovered how discount strategies negatively impacted profitability, highlighting opportunities to optimize pricing and improve margins.
+                  Identified loss-making products and uncovered how discount strategies negatively impacted profitability.
                 </p>
               </div>
             </Link>
@@ -78,7 +107,7 @@ export default function Home() {
                   E-commerce Performance & Delivery Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Analyzed customer and delivery data to uncover revenue concentration and showed how delivery delays significantly impact customer satisfaction and review scores.
+                  Analyzed customer and delivery data to uncover revenue concentration and delivery impact on satisfaction.
                 </p>
               </div>
             </Link>
@@ -100,7 +129,7 @@ export default function Home() {
                   TikTok Verification Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Built a predictive model to identify factors influencing content verification, revealing that engagement metrics and content type strongly affect verification outcomes.
+                  Built a classification model to identify factors influencing content verification.
                 </p>
               </div>
             </Link>
@@ -111,7 +140,7 @@ export default function Home() {
                   Waze Churn Analysis
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Developed churn prediction models and identified low user engagement as a key driver of churn, providing insights to improve retention strategies.
+                  Developed churn prediction models and identified engagement as a key driver.
                 </p>
               </div>
             </Link>
@@ -125,14 +154,13 @@ export default function Home() {
         <h2 className="text-3xl font-semibold">About Me</h2>
 
         <p className="text-gray-300 leading-relaxed">
-          I am a data analyst with a background in physiology and a strong interest in using data to understand and solve real-world problems. 
-          My experience spans data cleaning, analysis, and visualization using Python, SQL, and Power BI.
+          I am a data analyst with a background in physiology and a strong interest in solving real-world problems using data. 
+          I specialize in data cleaning, analysis, visualization, and machine learning.
         </p>
 
         <p className="text-gray-400 leading-relaxed">
-          Through hands-on projects, I have analyzed business performance, uncovered key insights, and applied 
-          machine learning techniques to support data-driven decision-making. I enjoy transforming complex datasets 
-          into clear, actionable insights that create real impact.
+          Through hands-on projects, I have built end-to-end data solutions — from raw data processing to predictive modeling 
+          and business intelligence dashboards — helping translate complex data into actionable insights.
         </p>
       </section>
 
