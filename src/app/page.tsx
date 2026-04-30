@@ -133,7 +133,7 @@ export default function Home() {
 
       {/* PROJECTS SECTION */}
       <section className="mt-24 max-w-5xl mx-auto space-y-12">
-        <h2 className="text-3xl font-semibold text-center">Projects</h2>
+        <h2 className="text-3xl font-semibold text-center">Data & Machine Learning Projects</h2>
 
         {/* BUSINESS ANALYTICS */}
         <div>
