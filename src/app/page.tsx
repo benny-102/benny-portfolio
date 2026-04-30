@@ -11,12 +11,11 @@ export default function Home() {
         </h1>
 
         <p className="text-xl text-gray-400">
-          Data Analyst
+          Machine Learning Engineer | Data Analyst
         </p>
 
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Turning complex data into actionable business insights using Python, SQL, and Power BI, 
-          with experience in predictive modeling and real-world data analysis.
+          Building intelligent systems and transforming complex data into real-world AI solutions using Python, NLP, and machine learning.
         </p>
 
         {/* BUTTONS */}
@@ -44,8 +43,9 @@ export default function Home() {
           <span>Python</span>
           <span>SQL</span>
           <span>Power BI</span>
+          <span>NLP</span>
           <span>Machine Learning</span>
-          <span>Data Analysis</span>
+          <span>LLMs</span>
         </div>
       </section>
 
@@ -76,6 +76,59 @@ export default function Home() {
 
           </div>
         </Link>
+      </section>
+
+      {/* AIML PROJECTS */}
+      <section className="mt-24 max-w-5xl mx-auto space-y-12">
+        <h2 className="text-3xl font-semibold text-center">AI & Machine Learning</h2>
+
+        <div className="grid md:grid-cols-2 gap-6">
+
+          {/* MENTAL HEALTH API */}
+          <Link href="https://github.com/benny-102/mental-health-detection-api" target="_blank">
+            <div className="bg-gray-900 p-6 rounded-2xl hover:scale-105 hover:bg-gray-800 transition duration-300 cursor-pointer border border-purple-800">
+
+              <h3 className="text-xl font-semibold mb-2">
+                Mental Health Detection API (BERT)
+              </h3>
+
+              <p className="text-gray-400 text-sm mb-3">
+                Fine-tuned a BERT-based NLP model to detect anxiety, depression, and loneliness from text data.
+              </p>
+
+              <ul className="text-sm text-gray-400 space-y-1">
+                <li>• Achieved 92% classification accuracy</li>
+                <li>• Built and deployed as a Flask API</li>
+                <li>• Designed for integration into real-world applications</li>
+                <li>• Tested within a telemedicine chatbot system</li>
+              </ul>
+
+            </div>
+          </Link>
+
+          {/* HEALTHIFY AI */}
+          <Link href="https://github.com/benny-102/healthify-ai-fitness-coach" target="_blank">
+            <div className="bg-gray-900 p-6 rounded-2xl hover:scale-105 hover:bg-gray-800 transition duration-300 cursor-pointer border border-green-800">
+
+              <h3 className="text-xl font-semibold mb-2">
+                Healthify AI Fitness Coach (RAG + LLM)
+              </h3>
+
+              <p className="text-gray-400 text-sm mb-3">
+                Built an AI-powered fitness and nutrition assistant using Retrieval-Augmented Generation (RAG).
+              </p>
+
+              <ul className="text-sm text-gray-400 space-y-1">
+                <li>• Integrated LLM with curated health datasets</li>
+                <li>• Designed personalized recommendations based on user inputs</li>
+                <li>• Implemented document chunking and retrieval pipeline</li>
+                <li>• Focused on real-world deployment via API architecture</li>
+              </ul>
+
+            </div>
+          </Link>
+
+        </div>
       </section>
 
       {/* PROJECTS SECTION */}
@@ -154,13 +207,11 @@ export default function Home() {
         <h2 className="text-3xl font-semibold">About Me</h2>
 
         <p className="text-gray-300 leading-relaxed">
-          I am a data analyst with a background in physiology and a strong interest in solving real-world problems using data. 
-          I specialize in data cleaning, analysis, visualization, and machine learning.
+          I am a machine learning-focused data analyst with a background in physiology and a strong interest in solving real-world problems using data and AI. 
         </p>
 
         <p className="text-gray-400 leading-relaxed">
-          Through hands-on projects, I have built end-to-end data solutions — from raw data processing to predictive modeling 
-          and business intelligence dashboards — helping translate complex data into actionable insights.
+          I build end-to-end systems — from data processing and modeling to deploying AI-powered applications that can be integrated into real-world platforms.
         </p>
       </section>
 
